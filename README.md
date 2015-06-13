@@ -23,6 +23,8 @@ The delegate method is called each time when you swipe on the control.
 
 ### Interface
 
+is very simple!
+
 ```objc
 @interface HKLSegmentedControl : UISegmentedControl
 @property (nonatomic, weak)id<HKLSegmentedControlDelegate> delegate;
@@ -35,7 +37,9 @@ The delegate method is called each time when you swipe on the control.
 @end
 ```
 
-### Receive update events via delegate method
+### Receive update events
+
+Use `segmentedControl:didChangedHighlightedIndex:` delegate method.
 
 ```objc
 @interface ViewController () <HKLSegmentedControlDelegate>
