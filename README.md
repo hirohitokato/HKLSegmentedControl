@@ -1,4 +1,8 @@
 # HKLSegmentedControl
+[![Version](https://img.shields.io/cocoapods/v/HKLSegmentedControl.svg?style=flat)](http://cocoadocs.org/docsets/HKLSegmentedControl)
+[![License](https://img.shields.io/cocoapods/l/HKLSegmentedControl.svg?style=flat)](http://cocoadocs.org/docsets/HKLSegmentedControl)
+[![Platform](https://img.shields.io/cocoapods/p/HKLSegmentedControl.svg?style=flat)](http://cocoadocs.org/docsets/HKLSegmentedControl)
+
 A subclass of UISegmentedControl which supports dynamically value changing.
 
 HKLSegmentedControl is a fully compatible class with UISegmentedControl.
