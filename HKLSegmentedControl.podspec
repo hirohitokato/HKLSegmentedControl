@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/katokichisoft/HKLSegmentedControl"
-  s.screenshots  = "https://github.com/katokichisoft/HKLSegmentedControl/blob/master/images/screenshots_1.gif"
+  s.screenshots  = "https://raw.githubusercontent.com/katokichisoft/HKLSegmentedControl/master/images/screenshots_1.gif"
   s.source       = { :git => "https://github.com/katokichisoft/HKLSegmentedControl.git", :tag => "v#{s.version}" }
 
   s.license      = "MIT"
