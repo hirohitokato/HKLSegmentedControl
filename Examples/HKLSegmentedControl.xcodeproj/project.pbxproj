@@ -21,6 +21,7 @@
 		1A56D1A61B2B350000CAA118 /* HKLSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKLSegmentedControl.h; sourceTree = "<group>"; };
 		1A56D1A71B2B350000CAA118 /* HKLSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKLSegmentedControl.m; sourceTree = "<group>"; };
 		1A56D1A91B2B38B400CAA118 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1A56D1AB1B2BD28B00CAA118 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1A8B75C51B29C3C0009E1B43 /* HKLSegmentedControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKLSegmentedControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A8B75C91B29C3C0009E1B43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A8B75CA1B29C3C0009E1B43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 		1A8B75BC1B29C3C0009E1B43 = {
 			isa = PBXGroup;
 			children = (
+				1A56D1AB1B2BD28B00CAA118 /* README.md */,
 				1A56D1A91B2B38B400CAA118 /* LICENSE */,
 				1A8B75C71B29C3C0009E1B43 /* Examples */,
 				1A56D1A51B2B350000CAA118 /* Libs */,
