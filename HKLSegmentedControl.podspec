@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/katokichisoft/HKLSegmentedControl"
-  s.screenshots  = "www.example.com/screenshots_1.gif"
+  s.screenshots  = "https://github.com/katokichisoft/HKLSegmentedControl/blob/master/images/screenshots_1.gif"
 
   s.license      = "MIT"
   s.author    = "Hirohito Kato"
