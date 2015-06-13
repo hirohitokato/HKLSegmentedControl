@@ -9,7 +9,7 @@ HKLSegmentedControl is a fully compatible class with UISegmentedControl.
 In addition to that, it supports touch moving events.
 The delegate method is called each time when you swipe on the control.
 
-<img src="https://raw.githubusercontent.com/katokichisoft/HKLSegmentedControl/master/images/screenshots_1.gif" width="320px" />
+<img src="https://raw.githubusercontent.com/hirohitokato/HKLSegmentedControl/master/images/screenshots_1.gif" width="320px" />
 
 ## :bulb: Features
 
@@ -19,7 +19,7 @@ The delegate method is called each time when you swipe on the control.
 - Works on iOS
 
 ## :book: Usage
-- [:link: iOS Example Project](https://github.com/katokichisoft/HKLSegmentedControl/tree/master/Examples)
+- [:link: iOS Example Project](https://github.com/hirohitokato/HKLSegmentedControl/tree/master/Examples)
 
 ### Interface
 

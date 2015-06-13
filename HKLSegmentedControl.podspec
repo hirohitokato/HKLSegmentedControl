@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "HKLSegmentedControl"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A subclass of UISegmentedControl which supports dynamically value changing."
 
   s.description  = <<-DESC
@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
                    The delegate method is called each time when you swipe on the control.
                    DESC
 
-  s.homepage     = "https://github.com/katokichisoft/HKLSegmentedControl"
-  s.screenshots  = "https://raw.githubusercontent.com/katokichisoft/HKLSegmentedControl/master/images/screenshots_1.gif"
-  s.source       = { :git => "https://github.com/katokichisoft/HKLSegmentedControl.git", :tag => "v#{s.version}" }
+  s.homepage     = "https://github.com/hirohitokato/HKLSegmentedControl"
+  s.screenshots  = "https://raw.githubusercontent.com/hirohitokato/HKLSegmentedControl/master/images/screenshots_1.gif"
+  s.source       = { :git => "https://github.com/hirohitokato/HKLSegmentedControl.git", :tag => "v#{s.version}" }
 
   s.license      = "MIT"
   s.author       = "Hirohito Kato"
