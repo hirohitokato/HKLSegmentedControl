@@ -33,6 +33,10 @@
 }
 
 // Delegate method.
+- (void)segmentedControl:(HKLSegmentedControl *)control didBeginTouch:(NSInteger)highlightedSegmentIndex {
+	_indexLabel.text = [NSString stringWithFormat:@"%ld", highlightedSegmentIndex];
+	_indexLabel.textColor = [UIColor brownColor];
+}
 - (void)segmentedControl:(HKLSegmentedControl *)control didChangedHighlightedIndex:(NSInteger)highlightedSegmentIndex {
 	_indexLabel.text = [NSString stringWithFormat:@"%ld", highlightedSegmentIndex];
 	_indexLabel.textColor = [UIColor redColor];

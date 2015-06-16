@@ -1,7 +1,7 @@
 //
 //  HKLSegmentedControl.h
 //
-//  Created by Hirohito Kato on 2015/06/11.
+//  Created by Hirohito Kato on 2015/06/17.
 //  Copyright (c) 2015 Hirohito Kato. MIT License.
 //
 
@@ -29,10 +29,20 @@
 @protocol HKLSegmentedControlDelegate <NSObject>
 @optional
 /**
+ *  Called when start touching the segmented control.
+ *
+ *  @param control                 The HKLSegmentedControl object you touched.
+ *  @param highlightedSegmentIndex Current segment index you touched.
+ */
+- (void)segmentedControl:(HKLSegmentedControl*)control
+		   didBeginTouch:(NSInteger)highlightedSegmentIndex;
+
+/**
  * Called when the touched segment is changed.
  *
  * This method is only called when you are touching the segmented control.
- * It is not called if you touch up it. Use default "Value Changed" event to handle it.
+ * It is not called if you touch up it. To handle touch end event, use
+ * default "Value Changed" event.
  *
  * @param control                 The HKLSegmentedControl object you touched.
  * @param highlightedSegmentIndex Current segment index you touched.

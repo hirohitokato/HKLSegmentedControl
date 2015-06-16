@@ -33,7 +33,8 @@ is very simple!
 
 @protocol HKLSegmentedControlDelegate <NSObject>
 @optional
-- (void)  segmentedControl:(HKLSegmentedControl*)control didChangedHighlightedIndex:(NSInteger)highlightedSegmentIndex;
+- (void)segmentedControl:(HKLSegmentedControl*)control didBeginTouch:(NSInteger)highlightedSegmentIndex;
+- (void)segmentedControl:(HKLSegmentedControl*)control didChangedHighlightedIndex:(NSInteger)highlightedSegmentIndex;
 @end
 ```
 

@@ -1,7 +1,7 @@
 //
 //  HKLSegmentedControl.m
 //
-//  Created by Hirohito Kato on 2015/06/11.
+//  Created by Hirohito Kato on 2015/06/17.
 //  Copyright (c) 2015 Hirohito Kato. MIT License.
 //
 
@@ -9,6 +9,7 @@
 
 @interface HKLSegmentedControl () {
 	struct {
+		unsigned int didBeginTouch : 1;
 		unsigned int didChangedHighlightedIndex : 1;
 	} _delegateFlags;
 }
@@ -34,6 +35,8 @@
 
 - (void)setDelegate:(id<HKLSegmentedControlDelegate>)delegate {
 	_delegate = delegate;
+	_delegateFlags.didBeginTouch =
+	[delegate respondsToSelector:@selector(segmentedControl:didBeginTouch:)];
 	_delegateFlags.didChangedHighlightedIndex =
 	[delegate respondsToSelector:@selector(segmentedControl:didChangedHighlightedIndex:)];
 }
@@ -49,10 +52,10 @@
 	if (index >= 0 && index != _highlightedSegmentIndex) {
 
 		_highlightedSegmentIndex = index;
-		if (_delegateFlags.didChangedHighlightedIndex) {
+		if (_delegateFlags.didBeginTouch) {
 
 			[_delegate segmentedControl:self
-			 didChangedHighlightedIndex:_highlightedSegmentIndex];
+						  didBeginTouch:_highlightedSegmentIndex];
 		}
 	}
 }

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "HKLSegmentedControl"
-  s.version      = "1.0.1"
+  s.version      = "1.1.0"
   s.summary      = "A subclass of UISegmentedControl which supports dynamically value changing."
 
   s.description  = <<-DESC
