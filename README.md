@@ -67,7 +67,7 @@ Use `segmentedControl:didChangedHighlightedIndex:` delegate method.
 
 ## Requirements
 
-iOS 7 or later
+iOS 8.4 or later
 
 ## Installation
 

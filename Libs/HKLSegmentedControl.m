@@ -2,7 +2,7 @@
 //  HKLSegmentedControl.m
 //
 //  Created by Hirohito Kato on 2015/06/17.
-//  Copyright (c) 2015 Hirohito Kato. MIT License.
+//  Copyright (c) 2015-2017 Hirohito Kato. MIT License.
 //
 
 #import "HKLSegmentedControl.h"
