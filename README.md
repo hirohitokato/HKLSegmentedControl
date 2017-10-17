@@ -78,6 +78,15 @@ it, simply add the following line to your Podfile:
 
 `pod 'HKLSegmentedControl'`
 
+### Carthage
+Add the following line to you **Cartfile**.
+
+```
+github "hirohitokato/DetailScrubber"
+```
+
+To install with carthage, follow the instruction on [Carthage](https://github.com/Carthage/Carthage).
+
 ## Author
 
 Hirohito Kato
