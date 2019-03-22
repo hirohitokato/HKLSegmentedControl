@@ -25,22 +25,45 @@ The delegate method is called each time when you swipe on the control.
 
 is very simple!
 
-```objc
-@interface HKLSegmentedControl : UISegmentedControl
-@property (nonatomic, weak)id<HKLSegmentedControlDelegate> delegate;
-@property (nonatomic, readonly)NSInteger highlightedSegmentIndex;
-@end
+```swift
+public class HKLSegmentedControl : UISegmentedControl {
 
-@protocol HKLSegmentedControlDelegate <NSObject>
-@optional
-- (void)segmentedControl:(HKLSegmentedControl*)control didBeginTouch:(NSInteger)highlightedSegmentIndex;
-- (void)segmentedControl:(HKLSegmentedControl*)control didChangedHighlightedIndex:(NSInteger)highlightedSegmentIndex;
-@end
+/// The object that acts as the delegate of the segmented control.
+public weak var delegate: HKLSegmentedControlDelegate?
+
+/// Current highlighted segment index you touch. If you don't touch it,
+///  The value is same with that of <code>selectedSegmentIndex</code> property.
+public private(set) var highlightedSegmentIndex: Int
+}
+
+public protocol HKLSegmentedControlDelegate: class {
+
+/// Called when start touching the segmented control.
+///
+/// This is optional.
+///
+/// - Parameters:
+///   - control: The HKLSegmentedControl object you touched.
+///   - highlightedSegmentIndex: Current segment index you touched.
+func segmentedControl(_ control:HKLSegmentedControl, didBeginTouch index:Int)
+
+
+/// Called when the touched segment is changed.
+///
+/// This method is only called when you are touching the segmented control.
+/// It is not called if you touch up it. To handle touch end event, use default "Value Changed" event.
+/// This is optional.
+///
+/// - Parameters:
+///   - control: The HKLSegmentedControl object you touched.
+///   - index: Current segment index you are touching.
+func segmentedControl(_ control: HKLSegmentedControl, didChangedIndex index: Int)
+}
 ```
 
 ### Receive update events
 
-Use `segmentedControl:didChangedHighlightedIndex:` delegate method.
+Use `segmentedControl(_:didChangedIndex:)` delegate method.
 
 ```objc
 @interface ViewController () <HKLSegmentedControlDelegate>
@@ -67,22 +90,15 @@ Use `segmentedControl:didChangedHighlightedIndex:` delegate method.
 
 ## Requirements
 
-iOS 8.4 or later
+iOS 10.3 or later
 
 ## Installation
-
-### CocoaPods
-
-HKLSegmentedControl is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-`pod 'HKLSegmentedControl'`
 
 ### Carthage
 Add the following line to you **Cartfile**.
 
 ```
-github "hirohitokato/DetailScrubber"
+github "hirohitokato/HKLSegmentedControl"
 ```
 
 To install with carthage, follow the instruction on [Carthage](https://github.com/Carthage/Carthage).
